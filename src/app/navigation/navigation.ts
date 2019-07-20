@@ -20,6 +20,14 @@ export const navigation: FuseNavigation[] = [
                     bg       : '#F44336',
                     fg       : '#FFFFFF'
                 }
+            },
+            {
+                id        : 'file-manager',
+                title     : 'File Manager',
+                translate : 'NAV.SAMPLE.TITLE',
+                type      : 'item',
+                icon      : 'folder',
+                url       : '/apps/file-manager',
             }
         ]
     }
