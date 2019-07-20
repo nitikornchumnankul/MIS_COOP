@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { RouterModule } from '@angular/router';
@@ -12,7 +12,11 @@ const routes =[
   declarations: [],
   imports: [
     RouterModule.forChild(routes),
-    FuseSharedModule
-  ]
+    FuseSharedModule,
+  
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+],
 })
 export class AppsModule { }

@@ -11,22 +11,25 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { FuseSidebarModule } from '@fuse/components';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatRippleModule } from '@angular/material/core';
-const routes: Routes =[
-      {
-          path : '**',
-          component : FileManagerComponent,
-          children  :[],
-          resolve   :{
-                files: FileManagerService
-          }
-      }
+
+const routes: Routes = [
+  {
+    path: '**',
+    component: FileManagerComponent,
+    children: [],
+    resolve: {
+      files: FileManagerService
+    }
+  }
 ];
 @NgModule({
   declarations: [
+    FileManagerComponent,
     FileListComponent,
-     DetailsComponent,
+    DetailsComponent,
+    
     MainComponent
   ],
   imports: [
@@ -37,13 +40,12 @@ const routes: Routes =[
     MatRippleModule,
     MatSlideToggleModule,
     MatTableModule,
-
     FuseSharedModule,
     FuseSidebarModule
   ],
-  providers : [
+  providers: [
     FileManagerService
   ],
- 
+
 })
 export class FileManagerModule { }

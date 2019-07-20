@@ -24,10 +24,10 @@ export const navigation: FuseNavigation[] = [
             {
                 id        : 'file-manager',
                 title     : 'File Manager',
-                translate : 'NAV.SAMPLE.TITLE',
+                translate : 'NAV.FILE_MANAGER',
                 type      : 'item',
                 icon      : 'folder',
-                url       : '/apps/file-manager',
+                url       : '/apps/file-manager'
             },
             
         ]
