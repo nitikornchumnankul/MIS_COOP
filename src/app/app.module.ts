@@ -18,7 +18,7 @@ import { fuseConfig } from 'app/fuse-config';
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
-import { FileManagerComponent } from './app/main/apps/file-manager/file-manager.component';
+import { FileManagerComponent } from './main/apps/file-manager/file-manager.component';
 
 const appRoutes: Routes = [
     {
