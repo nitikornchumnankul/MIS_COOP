@@ -28,7 +28,8 @@ export const navigation: FuseNavigation[] = [
                 type      : 'item',
                 icon      : 'folder',
                 url       : '/apps/file-manager',
-            }
+            },
+            
         ]
     }
 ];

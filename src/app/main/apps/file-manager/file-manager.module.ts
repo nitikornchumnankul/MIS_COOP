@@ -8,11 +8,11 @@ import { FileManagerComponent } from './file-manager.component';
 import { FileManagerService } from './file-manager.service';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatRippleModule } from '@angular/material/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { FuseSidebarModule } from '@fuse/components';
-
+import {MatTableModule} from '@angular/material/table';
+import { MatRippleModule } from '@angular/material/core';
 const routes: Routes =[
       {
           path : '**',
@@ -43,6 +43,7 @@ const routes: Routes =[
   ],
   providers : [
     FileManagerService
-  ]
+  ],
+ 
 })
 export class FileManagerModule { }
