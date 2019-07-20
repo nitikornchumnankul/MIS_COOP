@@ -6,7 +6,10 @@ export const locale = {
             'SAMPLE'        : {
                 'TITLE': 'Sample',
                 'BADGE': '25'
-            }
+            },
+           
+                'FILE_MANAGER' : 'File Manager'
+            
         }
     }
 };

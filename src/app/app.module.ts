@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,13 +18,15 @@ import { fuseConfig } from 'app/fuse-config';
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
-import { FileManagerComponent } from './app/main/apps/file-manager/file-manager.component';
+import { FileManagerComponent } from './main/apps/file-manager/file-manager.component';
+import { FileManagerModule } from './main/apps/file-manager/file-manager.module';
 
 const appRoutes: Routes = [
     {
         path      : '**',
         redirectTo: 'sample'
-    }
+    },
+   
 ];
 
 @NgModule({
@@ -56,11 +58,15 @@ const appRoutes: Routes = [
 
         // App modules
         LayoutModule,
-        SampleModule
+        SampleModule,
+        FileManagerModule
     ],
     bootstrap   : [
         AppComponent
-    ]
+    ],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ],
 })
 export class AppModule
 {
